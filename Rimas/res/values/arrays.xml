@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Used in View/Spinner1.java -->
+    <string-array name="opcionesrimas">
+        <item>Ultima letras</item>
+        <item>2 últimas letras</item>
+        <item>3 últimas letras</item>
+        <item>4 últimas letras</item>
+        
+    </string-array>
+  
+    
+</resources>

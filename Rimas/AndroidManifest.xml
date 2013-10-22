@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.programa.rimas"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.programa.rimas.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Rimas"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.programa.rimas.RIMAS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".RimasConOpciones"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.programa.rimas.RIMASCONOPCIONES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".RimasResultado"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.programa.rimas.RIMASRESULTADO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".ListaExpandible"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.programa.rimas.LISTAEXPANDIBLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name=".ListaExpandible2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.programa.rimas.LISTAEXPANDIBLE2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
